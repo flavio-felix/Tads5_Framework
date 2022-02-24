@@ -1,0 +1,24 @@
+<head>
+
+</head>
+
+<body>
+    <h1>Listando Usuarios</h1>
+    <table>
+        <thead>
+          <tr>
+            <th>ID:</th>
+            <th>Name:</th>
+            <th>Email:</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr th:each="user: ${userList}">
+            <td th:text="${user.id}"> />
+            <td th:text="${user.name}"> />
+            <td th:text="${user.email}"> />
+          </tr>
+        </tbody>
+      </table>
+</body>
